@@ -5,7 +5,7 @@ export default function App() {
     <>
       <section className="max-w-[1440px] h-[2222px] mx-auto bg-[#F7F7F7]">
         {/* Navigation  */}
-        <nav className="h-[79px] py-4 flex items-center justify-between">
+        <nav className="w-11/12 h-[79px] mx-auto py-4 flex items-center justify-between">
           {/* logo */}
           <div className="flex items-center">
             <img src="src/assets/icons/logo_piece.png" alt="logo piece" className="mr-2" />
@@ -23,21 +23,22 @@ export default function App() {
         </nav>
 
         {/* Hero One */}
-        <section className="h-[825px] bg-[#F7F7F7] p-16">
+        <section className="relative h-[825px] bg-[#F7F7F7] p-16">
           <div className="  ">
-            <div className="absolute w-[668px] h-[659px] top-0 right-6 ">
+            {/* bg element */}
+            <div className="absolute w-[668px] h-[659px] top-[-90px] right-20 ">
               <img src="src/assets/img/HERO_Element.png" alt="cars" />
             </div>
 
             {/* info */}
-            <div className="absolute h-[343px] ">
+            <div className="absolute w-11/12 h-[343px] ">
               <div className="">
                 <div className="font-bebas-neue leading-tight w-[650px] text-[76px]">{"Sprzedajemy samochody z europy".toUpperCase()}</div>
                 <p className="font-roboto-condensed text-base w-[280px] text-[#282828]">
                   Kup komfortowy pojazd, aby każda podróż była wyjątkowym przeżyciem.
                 </p>
               </div>
-              <div className="">
+              <div className="gap-6">
                 <button className="w-[158px] h-[47px] rounded-lg font-roboto-condensed bg-[#0147FF] text-[#F7F7F7]">Zobacz zdjęcia</button>
                 <button className="w-[158px] h-[47px] rounded-lg font-roboto-condensed bg-[#F7F7F7] text-[#0147FF] border-[#0147FF]-1">
                   Zadzwoń do nas
@@ -46,7 +47,7 @@ export default function App() {
             </div>
 
             {/* cars */}
-            <div className="absolute w-[1064px] h-[405px] right-0">
+            <div className="absolute w-[1064px] h-[405px] left-[376px] top-[328px]">
               <img src="src/assets/img/HERO_cars.png" alt="cars" />
             </div>
           </div>
