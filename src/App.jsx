@@ -8,8 +8,8 @@ export default function App() {
         <nav className="w-11/12 h-[79px] mx-auto py-4 flex items-center justify-between">
           {/* logo */}
           <div className="flex items-center">
-            <img src="src/assets/icons/logo_piece.png" alt="logo piece" className="mr-2" />
-            <img src="src/assets/icons/logo_text.png" alt="brand logo" />
+            <img src="./icons/logo_piece.png" alt="logo piece" className="mr-2" />
+            <img src="./icons/logo_text.png" alt="brand logo" />
           </div>
 
           {/* middle menu */}
@@ -113,7 +113,7 @@ export default function App() {
                 efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et [...]
                 <button className="w-[59px] h-[27px] font-roboto-condensed text-sm border-b-white border-b-[1px] flex">
                   Rozwiń
-                  <img className="pl-2" src="./icons/arrow_down.png" alt="arrow" />
+                  <img className="w-full pl-2" src="./icons/arrow_down.png" alt="arrow" />
                 </button>
               </div>
             </div>
@@ -123,7 +123,7 @@ export default function App() {
                 Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat ornare, diam turpis
                 efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et [...]
                 <button className="w-[59px] h-[27px] text-sm font-roboto-condensed border-b-white border-b-[1px] flex">
-                  Rozwiń <img className="pl-2" src="./icons/arrow_down.png" alt="arrow" />
+                  Rozwiń <img className="w-full pl-2" src="./icons/arrow_down.png" alt="arrow" />
                 </button>
               </div>
             </div>
