@@ -31,18 +31,18 @@ export default function App() {
             </div>
 
             {/* info */}
-            <div className="absolute w-11/12 h-[343px] ">
-              <div className="">
+            <div className="absolute w-11/12 h-[343px]">
+              <div className="grid gap-6">
                 <div className="font-bebas-neue leading-tight w-[650px] text-[76px]">{"Sprzedajemy samochody z europy".toUpperCase()}</div>
-                <p className="font-roboto-condensed text-base w-[280px] text-[#282828]">
+                <p className="my-10 font-roboto-condensed text-base w-[280px] text-[#282828]">
                   Kup komfortowy pojazd, aby każda podróż była wyjątkowym przeżyciem.
                 </p>
-              </div>
-              <div className="gap-6">
-                <button className="w-[158px] h-[47px] rounded-lg font-roboto-condensed bg-[#0147FF] text-[#F7F7F7]">Zobacz zdjęcia</button>
-                <button className="w-[158px] h-[47px] rounded-lg font-roboto-condensed bg-[#F7F7F7] text-[#0147FF] border-[#0147FF]-1">
-                  Zadzwoń do nas
-                </button>
+                <div className="flex flex-col sm:flex-row gap-6 sm:gap-6 font-roboto-condensed">
+                  <button className="w-full sm:w-[158px] h-[47px] rounded-lg bg-[#0147FF] text-[#F7F7F7]">Zobacz zdjęcia</button>
+                  <button className="w-full sm:w-[158px] h-[47px] rounded-lg bg-[#F7F7F7] text-[#0147FF] border-[#0147FF] border-[1px]">
+                    Zadzwoń do nas
+                  </button>
+                </div>
               </div>
             </div>
 
@@ -63,9 +63,9 @@ export default function App() {
               </h2>
             </div>
 
-            <div className="grid gap-12 grid-cols-6 font-roboto-condensed">
-              <span className="text-[15px] text-[#0147FF]">Samochody osobowe</span>
-              <span>Samochody dostawcze</span>
+            <div className="flex flex-col sm:flex-row sm:gap-6 font-roboto-condensed">
+              <button className="w-auto text-[15px] mr-12 text-[#0147FF]">Samochody osobowe</button>
+              <button className="w-auto text-[15px] text-black">Samochody dostawcze</button>
             </div>
           </div>
         </section>
@@ -76,7 +76,8 @@ export default function App() {
             {/* car 1 */}
             <div className="relative">
               <img className="w-full h-full object-cover" src="src/assets/img/car_1.jpg" alt="car 1" />
-              {/* play */}
+
+              {/* play button */}
               {/* <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-[82px] h-[82px] bg-slate-400"></div>
               </div> */}
@@ -89,7 +90,8 @@ export default function App() {
             {/* car 2 */}
             <div className="relative">
               <img className="w-full h-full object-cover" src="src/assets/img/car_2.jpg" alt="car 2" />
-              {/* play */}
+
+              {/* play button*/}
               {/* <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-[82px] h-[82px] bg-slate-400"></div>
               </div> */}
@@ -111,7 +113,7 @@ export default function App() {
                 efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et [...]
                 <button className="w-[59px] h-[27px] font-roboto-condensed text-sm border-b-white border-b-[1px] flex">
                   Rozwiń
-                  <img className="pl-2" src="src/assets/arrow_down.png" alt="arrow" />
+                  <img className="pl-2" src="src/assets/icons/arrow_down.png" alt="arrow" />
                 </button>
               </div>
             </div>
@@ -121,7 +123,7 @@ export default function App() {
                 Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat ornare, diam turpis
                 efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et [...]
                 <button className="w-[59px] h-[27px] text-sm font-roboto-condensed border-b-white border-b-[1px] flex">
-                  Rozwiń <img className="pl-2" src="src/assets/arrow_down.png" alt="arrow" />
+                  Rozwiń <img className="pl-2" src="src/assets/icons/arrow_down.png" alt="arrow" />
                 </button>
               </div>
             </div>

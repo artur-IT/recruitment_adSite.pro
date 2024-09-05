@@ -2,14 +2,18 @@
   "name": "cars_spot",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://arturit.github.io/recruitment_adSite.pro/",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
