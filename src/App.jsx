@@ -48,7 +48,7 @@ export default function App() {
 
             {/* cars */}
             <div className="absolute w-[1064px] h-[405px] left-[376px] top-[328px]">
-              <img src="./src/assets/img/HERO_cars.png" alt="cars" />
+              <img src="./img/HERO_cars.png" alt="cars" />
             </div>
           </div>
         </section>
