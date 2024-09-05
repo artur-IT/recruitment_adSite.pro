@@ -27,7 +27,7 @@ export default function App() {
           <div className="  ">
             {/* bg element */}
             <div className="absolute w-[668px] h-[659px] top-[-90px] right-20 ">
-              <img src="src/assets/img/HERO_Element.png" alt="cars" />
+              <img src="./img/HERO_Element.png" alt="cars" />
             </div>
 
             {/* info */}
@@ -75,7 +75,7 @@ export default function App() {
           <div className="grid grid-cols-2 gap-x-16 justify-center">
             {/* car 1 */}
             <div className="relative">
-              <img className="w-full h-full object-cover" src="src/assets/img/car_1.jpg" alt="car 1" />
+              <img className="w-full h-full object-cover" src="./img/car_1.jpg" alt="car 1" />
 
               {/* play button */}
               {/* <div className="absolute inset-0 flex items-center justify-center">
@@ -89,7 +89,7 @@ export default function App() {
 
             {/* car 2 */}
             <div className="relative">
-              <img className="w-full h-full object-cover" src="src/assets/img/car_2.jpg" alt="car 2" />
+              <img className="w-full h-full object-cover" src="./img/car_2.jpg" alt="car 2" />
 
               {/* play button*/}
               {/* <div className="absolute inset-0 flex items-center justify-center">
@@ -113,7 +113,7 @@ export default function App() {
                 efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et [...]
                 <button className="w-[59px] h-[27px] font-roboto-condensed text-sm border-b-white border-b-[1px] flex">
                   Rozwiń
-                  <img className="pl-2" src="src/assets/icons/arrow_down.png" alt="arrow" />
+                  <img className="pl-2" src="./icons/arrow_down.png" alt="arrow" />
                 </button>
               </div>
             </div>
@@ -123,7 +123,7 @@ export default function App() {
                 Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat ornare, diam turpis
                 efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et [...]
                 <button className="w-[59px] h-[27px] text-sm font-roboto-condensed border-b-white border-b-[1px] flex">
-                  Rozwiń <img className="pl-2" src="src/assets/icons/arrow_down.png" alt="arrow" />
+                  Rozwiń <img className="pl-2" src="./icons/arrow_down.png" alt="arrow" />
                 </button>
               </div>
             </div>
