@@ -56,16 +56,16 @@ export default function App() {
         </section>
 
         {/* Headers Block */}
-        <section className="h-[207px] bg-[#F7F7F7] pt-[80px]">
-          <div className="container mx-auto w-[1264px] grid gap-6">
-            <div className="w-[434px] h-[80px]">
+        <section className="h-auto lg:h-[207px] bg-[#F7F7F7] pt-[80px]">
+          <div className="mx-4 lg:mx-auto lg:w-[1264px] grid gap-6">
+            <div className="w-[434px] lg:h-[80px]">
               <span className="font-roboto-condensed text-[21.5px] text-[#0147FF] leading-[32.25px]">Prezentacja firmy</span>
-              <h2 className="h-12 text-[#1D1D1B] font-bebas-neue text-[40px] font-bold gap-8">
+              <h2 className="lg:h-12 text-[#1D1D1B] font-bebas-neue text-[40px] font-bold gap-8">
                 {"Zobacz naszą Galerię zdjęć".toLocaleUpperCase()}
               </h2>
             </div>
 
-            <div className="flex flex-col sm:flex-row sm:gap-6 font-roboto-condensed">
+            <div className="flex flex-row  lg:gap-6 font-roboto-condensed">
               <button className="w-auto text-[15px] mr-12 text-[#0147FF] border-b-[1px] border-[#0147FF]">Samochody osobowe</button>
               <button className="w-auto text-[15px] text-black">Samochody dostawcze</button>
             </div>
