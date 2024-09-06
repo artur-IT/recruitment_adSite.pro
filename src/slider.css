@@ -1,15 +1,15 @@
 .slider-container {
   position: relative;
-  width: 100%; /* Dostosuj szerokość slidera */
-  height: auto; /* Dostosuj wysokość slidera */
+  width: 100%;
+  height: auto;
   margin: 50px auto;
-  overflow: hidden; /* Ukrywamy slajdy poza obszarem slidera */
+  overflow: hidden;
 }
 
 .slider {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: 90%; /* Dwa razy szerszy niż slider-wrapper, aby pomieścić dwa slajdy obok siebie */
+  width: 90%;
 }
 
 .slide {

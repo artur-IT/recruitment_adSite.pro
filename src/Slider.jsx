@@ -9,14 +9,8 @@ const Slider = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prevSlide) => {
-        // Sprawdzamy czy jesteśmy na przedostatnim slajdzie
-        if (prevSlide === images.length - 1) {
-          // Przeskakujemy na początek (slajd 0)
-          return 0;
-        } else {
-          // Przechodzimy do następnego slajdu
-          return prevSlide + 1;
-        }
+        if (prevSlide === images.length - 1) return 0;
+        else return prevSlide + 1;
       });
     }, 2000);
 
@@ -27,10 +21,17 @@ const Slider = () => {
     <div className="slider-container">
       <div className="slider" style={{ transform: `translateX(-${currentSlide * 55}%)` }}>
         {images.map((image, index) => (
-          <div key={index} className="slide" style={{ width: "50%" }}>
-            {" "}
-            {/* Ustawiamy szerokość slajdu na 50% */}
+          <div key={index} className="relative slide" style={{ width: "50%" }}>
             <img src={image} alt={`Slide ${index + 1}`} className="slider-image" />
+            {/* PLAY BUTTON */}
+            {/* <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-[82px] h-[82px] bg-slate-400"></div>
+            </div> */}
+
+            {/* CAPTION */}
+            {/* <div className="absolute bottom-0 left-0">
+              <div className="w-[366px] h-[112px] bg-red-400"></div>
+            </div> */}
           </div>
         ))}
       </div>
@@ -44,20 +45,3 @@ const Slider = () => {
 };
 
 export default Slider;
-
-{
-  /* play button*/
-}
-{
-  /* <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-[82px] h-[82px] bg-slate-400"></div>
-              </div> */
-}
-{
-  /* caption */
-}
-{
-  /* <div className="absolute bottom-0 left-0">
-                <div className="w-[366px] h-[112px] bg-red-400"></div>
-              </div> */
-}
