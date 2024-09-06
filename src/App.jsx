@@ -72,41 +72,36 @@ export default function App() {
           </div>
         </section>
 
-        {/* Gallery Block  */}
+        {/* GALLERY SLIDER  */}
         <section className="w-[1440px] h-[678px] p-12 bg-[#F7F7F7]">
+          <Slider />
+        </section>
+
+        {/* OLD - Gallery Block  */}
+        {/* <section className="w-[1440px] h-[678px] p-12 bg-[#F7F7F7]">
           <div className="grid grid-cols-2 gap-16 justify-center">
-            {/* car 1 */}
+
             <div className="relative w-full h-0 pb-[56.25%]">
               <img className="absolute top-0 left-0 w-full h-full object-cover" src="./img/car_1.jpg" alt="car 1" />
 
-              {/* play button */}
+             
               <div className="absolute opacity-70 inset-0 flex items-center justify-center">
                 <div className="w-[82px] h-[82px] bg-slate-400"></div>
-              </div>
-              {/* caption */}
-              <div className="absolute opacity-50 bottom-0 left-0">
+              </div>              <div className="absolute opacity-50 bottom-0 left-0">
                 <div className="w-[366px] h-[112px] bg-red-400"></div>
               </div>
             </div>
 
-            {/* car 2 */}
+    
             <div className="relative w-full h-0 pb-[56.25%]">
               <img className="absolute top-0 left-0 w-full h-full object-cover" src="./img/car_2.jpg" alt="car 2" />
 
-              {/* play button*/}
-              {/* <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-[82px] h-[82px] bg-slate-400"></div>
-              </div> */}
-              {/* caption */}
-              {/* <div className="absolute bottom-0 left-0">
-                <div className="w-[366px] h-[112px] bg-red-400"></div>
-              </div> */}
+        
             </div>
           </div>
 
-          {/* gallery dots */}
-          <div className="mx-auto bg-slate-400 w-20 h-6 mt-20"></div>
-        </section>
+   
+        </section> */}
 
         {/* SEO */}
         <section className="h-[361px] bg-[#282828] py-[88px] font-roboto-condensed text-base text-white justify-around grid gap-4">
@@ -140,11 +135,6 @@ export default function App() {
           <div className="w-[63px] h-6 font-bold grid gap-4 text-white">CarsSpot</div>
           <div className="w-[150px] h-6 grid gap-6 text-white">Polityka prywatności</div>
         </footer>
-
-        {/* GALLERY SLIDER  */}
-        <section className="w-[1440px] h-[678px] p-12 bg-[#F7F7F7]">
-          <Slider />
-        </section>
       </section>
     </>
   );

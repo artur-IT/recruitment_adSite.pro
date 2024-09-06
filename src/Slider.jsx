@@ -9,8 +9,8 @@ const Slider = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prevSlide) => {
-        // Zamiast modulo, sprawdzamy czy jesteśmy na przedostatnim slajdzie
-        if (prevSlide === images.length - 2) {
+        // Sprawdzamy czy jesteśmy na przedostatnim slajdzie
+        if (prevSlide === images.length - 1) {
           // Przeskakujemy na początek (slajd 0)
           return 0;
         } else {
@@ -25,7 +25,7 @@ const Slider = () => {
 
   return (
     <div className="slider-container">
-      <div className="slider" style={{ transform: `translateX(-${currentSlide * 50}%)` }}>
+      <div className="slider" style={{ transform: `translateX(-${currentSlide * 55}%)` }}>
         {images.map((image, index) => (
           <div key={index} className="slide" style={{ width: "50%" }}>
             {" "}
@@ -44,3 +44,20 @@ const Slider = () => {
 };
 
 export default Slider;
+
+{
+  /* play button*/
+}
+{
+  /* <div className="absolute inset-0 flex items-center justify-center">
+                <div className="w-[82px] h-[82px] bg-slate-400"></div>
+              </div> */
+}
+{
+  /* caption */
+}
+{
+  /* <div className="absolute bottom-0 left-0">
+                <div className="w-[366px] h-[112px] bg-red-400"></div>
+              </div> */
+}
