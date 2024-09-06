@@ -77,38 +77,12 @@ export default function App() {
           <Slider />
         </section>
 
-        {/* OLD - Gallery Block  */}
-        {/* <section className="w-[1440px] h-[678px] p-12 bg-[#F7F7F7]">
-          <div className="grid grid-cols-2 gap-16 justify-center">
-
-            <div className="relative w-full h-0 pb-[56.25%]">
-              <img className="absolute top-0 left-0 w-full h-full object-cover" src="./img/car_1.jpg" alt="car 1" />
-
-             
-              <div className="absolute opacity-70 inset-0 flex items-center justify-center">
-                <div className="w-[82px] h-[82px] bg-slate-400"></div>
-              </div>              <div className="absolute opacity-50 bottom-0 left-0">
-                <div className="w-[366px] h-[112px] bg-red-400"></div>
-              </div>
-            </div>
-
-    
-            <div className="relative w-full h-0 pb-[56.25%]">
-              <img className="absolute top-0 left-0 w-full h-full object-cover" src="./img/car_2.jpg" alt="car 2" />
-
-        
-            </div>
-          </div>
-
-   
-        </section> */}
-
         {/* SEO */}
-        <section className="h-[361px] bg-[#282828] py-[88px] font-roboto-condensed text-base text-white justify-around grid gap-4">
-          <div className="h-[185px] flex justify-around">
-            <div className="w-[576px] h-[76px] font-bebas-neue text-[25px] leading-[37.5px] font-normal grid gap-4 justify-around">
+        <section className="h-[600px] lg:h-[361px] bg-[#282828] py-[88px] font-roboto-condensed text-base text-white justify-around grid gap-4">
+          <div className="h-auto lg:h-[185px] flex flex-col lg:flex-row justify-around">
+            <div className=" lg:w-[576px] lg:h-[76px] px-4 lg:px-0 mb-5 lg:mb-0 font-bebas-neue text-[25px] leading-[37.5px] font-normal grid gap-4 lg:justify-around ">
               Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit nulla commodo.
-              <div className="h-[93px] font-roboto-condensed  text-sm font-normal leading-[21px] grid gap-6">
+              <div className="h-auto lg:h-[93px] font-roboto-condensed  text-sm font-normal leading-[21px] grid gap-6">
                 Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat ornare, diam turpis
                 efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et [...]
                 <button className="w-[59px] h-[27px] font-roboto-condensed text-sm border-b-white border-b-[1px] flex">
@@ -117,7 +91,7 @@ export default function App() {
                 </button>
               </div>
             </div>
-            <div className="w-[576px] h-[76px] font-bebas-neue text-[25px] leading-[37.5px] font-normal grid gap-4 justify-around">
+            <div className="lg:w-[576px] lg:h-[76px] px-4 lg:px-0 mb-5 lg:mb-0 font-bebas-neue text-[25px] leading-[37.5px] font-normal grid gap-4 justify-around">
               Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit nulla commodo.
               <div className="h-[93px] font-roboto-condensed  text-sm font-normal leading-[21px] grid gap-6">
                 Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat ornare, diam turpis
