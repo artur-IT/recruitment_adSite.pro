@@ -6,25 +6,27 @@ export default function App() {
     <>
       <section className="max-w-[1440px] h-[2222px] mx-auto bg-[#F7F7F7]">
         {/* Navigation  */}
-        <nav className="relative z-40 w-11/12 h-[79px] mx-auto py-4 flex items-center justify-between">
+        <nav className="relative z-40 w-11/12 h-[79px] mx-auto py-4 grid lg:grid-cols-3 items-center">
           {/* logo */}
-          <div className="flex items-center">
+          <div className="flex justify-start">
             <img src="./icons/logo_piece.png" alt="logo piece" className="mr-2" />
             <img src="./icons/logo_text.png" alt="brand logo" />
           </div>
 
           {/* middle menu */}
-          <div className="font-roboto-condensed text-base flex space-x-4">
+          <div className="absolute right-0 lg:static font-roboto-condensed text-base flex lg:justify-center space-x-4 ">
             <a href="#">Galeria zdjęć</a>
             <a href="#">FAQ</a>
           </div>
 
           {/* right button */}
-          <button className="w-[158px] h-[47px] rounded-lg font-roboto-condensed bg-[#0147FF] text-[#F7F7F7]">Zadzwoń do nas</button>
+          <div className="absolute mt-24 lg:mt-0 lg:static lg:flex lg:justify-end">
+            <button className="w-[158px] h-[47px] rounded-lg font-roboto-condensed bg-[#0147FF] text-[#F7F7F7]">Zadzwoń do nas</button>
+          </div>
         </nav>
 
         {/* Hero One */}
-        <section className="relative h-[600px] lg:h-[825px] bg-[#F7F7F7] mt-5 lg:mt-0 p-5 lg:p-16">
+        <section className="relative h-[600px] lg:h-[825px] bg-[#F7F7F7] mt-16 lg:mt-0 p-5 lg:p-16">
           <div>
             {/* bg element */}
             <div className="absolute invisible lg:visible w-1/2 max-w-[668px]  top-[-10%] right-[5%] xl:right-20">
