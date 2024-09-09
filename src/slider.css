@@ -46,3 +46,13 @@
 .dot.active {
   background-color: #0147ff;
 }
+
+@media (max-width: 1023px) {
+  .slide {
+    margin: 0 0px;
+  }
+
+  .slider {
+    width: 200vw;
+  }
+}

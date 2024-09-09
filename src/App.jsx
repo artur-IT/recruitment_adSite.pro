@@ -4,7 +4,7 @@ import Slider from "./slider";
 export default function App() {
   return (
     <>
-      <section className="max-w-[1440px] h-[2222px] mx-auto bg-[#F7F7F7]">
+      <section className="max-w-[1440px] lg:h-[2222px] mx-auto bg-[#F7F7F7]">
         {/* Navigation  */}
         <nav className="relative z-40 w-11/12 h-[79px] mx-auto py-4 grid lg:grid-cols-3 items-center">
           {/* logo */}
@@ -76,7 +76,7 @@ export default function App() {
         </section>
 
         {/* GALLERY SLIDER  */}
-        <section className="w-[1440px] h-[678px] p-12 bg-[#F7F7F7]">
+        <section className=" lg:w-[1440px] lg:h-[678px] lg:p-12 bg-[#F7F7F7]">
           <Slider />
         </section>
 

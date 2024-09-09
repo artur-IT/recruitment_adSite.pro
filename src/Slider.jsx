@@ -14,12 +14,14 @@ const Slider = () => {
       });
     }, 2000);
 
+    console.log(screen.availWidth);
+
     return () => clearInterval(timer);
   }, [images.length]);
 
   return (
     <div className="slider-container">
-      <div className="slider" style={{ transform: `translateX(-${currentSlide * 55}%)` }}>
+      <div className="slider" style={{ transform: `translateX(-${currentSlide * (screen.availWidth > 1023 ? 55 : 50)}%)` }}>
         {images.map((image, index) => (
           <div key={index} className="relative slide" style={{ width: "50%" }}>
             <img src={image} alt={`Slide ${index + 1}`} className="slider-image" />
