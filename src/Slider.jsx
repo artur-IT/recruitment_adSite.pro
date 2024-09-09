@@ -14,8 +14,6 @@ const Slider = () => {
       });
     }, 2000);
 
-    console.log(screen.availWidth);
-
     return () => clearInterval(timer);
   }, [images.length]);
 
