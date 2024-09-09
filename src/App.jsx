@@ -20,7 +20,7 @@ export default function App() {
           </div>
 
           {/* right button */}
-          <div className="absolute mt-24 lg:mt-0 lg:static lg:flex lg:justify-end">
+          <div className="relative mt-4 lg:mt-0 lg:static lg:flex lg:justify-end">
             <button className="w-[158px] h-[47px] rounded-lg font-roboto-condensed bg-[#0147FF] text-[#F7F7F7]">Zadzwoń do nas</button>
           </div>
         </nav>
@@ -29,7 +29,7 @@ export default function App() {
         <section className="relative h-[600px] lg:h-[825px] bg-[#F7F7F7] mt-16 lg:mt-0 p-5 lg:p-16">
           <div>
             {/* bg element */}
-            <div className="absolute invisible lg:visible w-1/2 max-w-[668px]  top-[-10%] right-[5%] xl:right-20">
+            <div className="absolute invisible lg:visible w-1/2 max-w-[668px] top-[-10%] right-[5%] xl:right-20">
               <img className="" src="./img/HERO_Element.png" alt="cars" />
             </div>
 
@@ -61,7 +61,7 @@ export default function App() {
         {/* Headers Block */}
         <section className="h-auto lg:h-[207px] bg-[#F7F7F7] pt-[80px]">
           <div className="mx-4 lg:mx-auto lg:w-[1264px] grid gap-6">
-            <div className="w-[434px] lg:h-[80px]">
+            <div className="lg:w-[434px] lg:h-[80px]">
               <span className="font-roboto-condensed text-[21.5px] text-[#0147FF] leading-[32.25px]">Prezentacja firmy</span>
               <h2 className="lg:h-12 text-[#1D1D1B] font-bebas-neue text-[40px] font-bold gap-8">
                 {"Zobacz naszą Galerię zdjęć".toLocaleUpperCase()}
@@ -108,9 +108,9 @@ export default function App() {
         </section>
 
         {/* Footer */}
-        <footer className="font-roboto-condensed text-base text-center bg-[#282828] h-[72px] px-[120px] py-6 border-t-white border-t-[1px] flex justify-between items-center">
-          <div className="w-[63px] h-6 font-bold grid gap-4 text-white">CarsSpot</div>
-          <div className="w-[150px] h-6 grid gap-6 text-white">Polityka prywatności</div>
+        <footer className="font-roboto-condensed text-base text-center bg-[#282828] h-[72px] lg:px-[120px] py-6 border-t-white border-t-[1px] flex justify-around lg:justify-between items-center">
+          <div className="w-auto h-6 font-bold grid gap-4 text-white">CarsSpot</div>
+          <div className="w-auto h-6 grid gap-6 text-white">Polityka prywatności</div>
         </footer>
       </section>
     </>
