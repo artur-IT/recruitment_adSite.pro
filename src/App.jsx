@@ -6,7 +6,7 @@ export default function App() {
     <>
       <section className="mx-auto max-w-[1440px] bg-[#F7F7F7] lg:h-[2222px]">
         {/* Navigation  */}
-        <nav className="relative z-40 mx-auto grid h-[79px] items-center px-4 py-4 lg:grid-cols-3 lg:px-24">
+        <nav className="relative z-40 mx-auto grid h-[79px] items-center py-4 lg:grid-cols-3 lg:px-24">
           {/* logo */}
           <div className="flex justify-start">
             <img
@@ -72,7 +72,7 @@ export default function App() {
         </section>
 
         {/* Headers Block */}
-        <section className="h-auto bg-[#F7F7F7] lg:h-[207px] lg:px-24 lg:pt-16">
+        <section className="bg-[#F7F7F7] lg:h-[207px] lg:px-24 lg:pt-16">
           <div className="mx-4 grid lg:mx-auto lg:w-[1264px] lg:gap-6">
             <div className="lg:h-[80px] lg:w-[434px]">
               <span className="font-roboto-condensed text-[21.5px] leading-[32.25px] text-[#0147FF]">
@@ -103,7 +103,7 @@ export default function App() {
         </section>
 
         {/* SEO */}
-        <section className="grid h-[600px] gap-4 bg-[#282828] py-[88px] font-roboto-condensed text-base text-white lg:h-[361px]">
+        <section className="grid h-auto gap-4 bg-[#282828] py-[88px] font-roboto-condensed text-base text-white lg:h-[361px]">
           <div className="flex h-auto flex-col justify-center gap-12 px-4 lg:h-[185px] lg:flex-row">
             <div className="mb-5 grid gap-4 px-4 font-bebas-neue text-[25px] font-normal leading-[37.5px] lg:mb-0 lg:h-[76px] lg:justify-around lg:px-0 xl:w-[576px]">
               Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit
