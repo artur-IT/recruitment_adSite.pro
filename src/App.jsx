@@ -65,7 +65,7 @@ export default function App() {
             </div>
 
             {/* cars */}
-            <div className="absolute bottom-24 left-1/4 h-auto w-3/4 max-w-[1064px] lg:top-[400px] xl:left-[376px] xl:top-[328px]">
+            <div className="absolute bottom-24 left-0 h-auto w-full max-w-[1064px] pl-5 lg:top-[400px] xl:left-[376px] xl:top-[328px]">
               <img src="./img/HERO_cars.png" alt="cars" />
             </div>
           </div>
