@@ -25,8 +25,8 @@ export default function App() {
 
           {/* right button */}
           <div className="relative mt-4 lg:static lg:mt-0 lg:flex lg:justify-end">
-            <button className="h-[47px] w-[158px] rounded-lg bg-[#0147FF] font-roboto-condensed text-[#F7F7F7]">
-              Zadzwoń do nas
+            <button className="h-[47px] w-[158px] rounded-lg bg-[#0147FF] font-roboto-condensed text-[#F7F7F7] hover:border-2 hover:border-[#0147FF] hover:bg-white hover:text-[#0147FF]">
+              <a href="tel:+48 123 456 789">Zadzwoń do nas</a>
             </button>
           </div>
         </nav>
@@ -51,10 +51,10 @@ export default function App() {
                 </p>
                 <div className="flex flex-col gap-6 font-roboto-condensed sm:flex-row sm:gap-6">
                   <button className="h-[47px] w-[158px] rounded-lg bg-[#0147FF] text-[#F7F7F7]">
-                    Zobacz zdjęcia
+                    <a href="#gallery">Zobacz zdjęcia</a>
                   </button>
-                  <button className="h-[47px] w-[158px] rounded-lg border-[1px] border-[#0147FF] bg-[#F7F7F7] text-[#0147FF]">
-                    Zadzwoń do nas
+                  <button className="h-[47px] w-[158px] rounded-lg border-[1px] border-[#0147FF] bg-[#F7F7F7] text-[#0147FF] hover:border-2 hover:border-[#0147FF] hover:bg-[#0147FF] hover:text-[#F7F7F7]">
+                    <a href="tel:+48 123 456 789">Zadzwoń do nas</a>
                   </button>
                 </div>
               </div>
@@ -74,7 +74,10 @@ export default function App() {
               <span className="font-roboto-condensed text-[21.5px] leading-[32.25px] text-[#0147FF]">
                 Prezentacja firmy
               </span>
-              <h2 className="font-bebas-neue text-[40px] font-bold text-[#1D1D1B] lg:h-12">
+              <h2
+                id="gallery"
+                className="font-bebas-neue text-[40px] font-bold text-[#1D1D1B] lg:h-12"
+              >
                 {"Zobacz naszą Galerię zdjęć".toLocaleUpperCase()}
               </h2>
             </div>
