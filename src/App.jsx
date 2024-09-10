@@ -25,7 +25,7 @@ export default function App() {
 
           {/* right button */}
           <div className="relative lg:static lg:flex lg:justify-end">
-            <button className="invisible h-[47px] w-[135px] rounded-lg bg-[#0147FF] font-roboto-condensed text-[#F7F7F7] hover:border-2 hover:border-[#0147FF] hover:bg-white hover:text-[#0147FF] lg:visible lg:w-[158px]">
+            <button className="delay-900 invisible h-[47px] w-[135px] rounded-lg bg-[#0147FF] font-roboto-condensed text-[#F7F7F7] transition-all hover:border-[1px] hover:border-[#0147FF] hover:bg-white hover:text-[#0147FF] lg:visible lg:w-[158px]">
               <a href="tel:+48 123 456 789">Zadzwoń do nas</a>
             </button>
           </div>
@@ -37,7 +37,7 @@ export default function App() {
             {/* bg element */}
             <div className="invisible absolute right-[5%] top-[-15%] w-1/2 max-w-[668px] lg:visible xl:right-20">
               <img
-                className="h-[640px]"
+                className="h-[670px]"
                 src="./img/HERO_Element.png"
                 alt="cars"
               />
@@ -57,7 +57,7 @@ export default function App() {
                   <button className="h-[47px] w-[135px] rounded-lg bg-[#0147FF] text-[#F7F7F7] md:w-[158px]">
                     <a href="#gallery">Zobacz zdjęcia</a>
                   </button>
-                  <button className="h-[47px] w-[135px] rounded-lg border-[1px] border-[#0147FF] bg-[#F7F7F7] text-[#0147FF] hover:border-2 hover:border-[#0147FF] hover:bg-[#0147FF] hover:text-[#F7F7F7] md:w-[158px]">
+                  <button className="delay-900 h-[47px] w-[135px] rounded-lg border-[1px] border-[#0147FF] bg-[#F7F7F7] text-[#0147FF] transition-all hover:border-2 hover:border-[#0147FF] hover:bg-[#0147FF] hover:text-[#F7F7F7] md:w-[158px]">
                     <a href="tel:+48 123 456 789">Zadzwoń do nas</a>
                   </button>
                 </div>
