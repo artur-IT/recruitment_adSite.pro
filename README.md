@@ -37,4 +37,4 @@ Simple short Single Landingpage for recruitment.
 
 ## 👏 Thanks
 
-I would like to improve adSite.pro for chance to me.
+I would like to thanks adSite.pro for chance to me.
