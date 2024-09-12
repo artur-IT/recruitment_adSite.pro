@@ -63,7 +63,7 @@ export default function App() {
 
             {/* cars */}
             <div className="absolute bottom-24 right-0 h-auto w-full max-w-[1064px] pl-5 lg:top-[400px] xl:top-[328px]">
-              <img src="./img/HERO_cars.png" alt="cars" />
+              <img src="./img/HERO_cars.webp" alt="cars" />
             </div>
           </div>
         </section>

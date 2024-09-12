@@ -5,10 +5,11 @@ import { useState, useEffect } from "react";
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const images = [
-    "./img/car_1.jpg",
-    "./img/car_2.jpg",
-    "./img/car_3.jpg",
-    "./img/car_4.jpg",
+    "./img/car_1.webp",
+    "./img/car_2.webp",
+    "./img/car_3.webp",
+    "./img/car_4.webp",
+    "./img/road.jpg",
   ];
 
   useEffect(() => {
