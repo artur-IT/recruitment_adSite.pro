@@ -11,7 +11,7 @@ export default function App() {
           {/* logo */}
           <div className="flex justify-start">
             <img
-              src="src/assets/icons/logo_piece.png"
+              src="./src/assets/icons/logo_piece.png"
               alt="logo piece"
               className="mr-2"
             />
