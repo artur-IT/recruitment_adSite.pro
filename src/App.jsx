@@ -1,6 +1,7 @@
 import "./styles/index.css";
 import ExpandText from "./components/ExpandText";
 import Slider from "./components/Slider";
+import logo from "./assets/icons/logo.png";
 
 export default function App() {
   return (
@@ -11,11 +12,12 @@ export default function App() {
           {/* logo */}
           <div className="flex justify-start">
             <img
-              src="./src/assets/icons/logo_piece.png"
-              alt="logo piece"
+              // src="src/assets/icons/logo.png"
+              src={logo}
+              alt="logo"
               className="mr-2"
             />
-            <img src="/src/assets/icons/logo_text.png" alt="brand logo" />
+            <img src="./assets/icons/logo_text.png" alt="brand logo" />
           </div>
 
           {/* middle menu */}
