@@ -15,7 +15,7 @@ export default function App() {
               alt="logo piece"
               className="mr-2"
             />
-            <img src="src/assets/icons/logo_text.png" alt="brand logo" />
+            <img src="./src/assets/icons/logo_text.png" alt="brand logo" />
           </div>
 
           {/* middle menu */}
