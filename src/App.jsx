@@ -95,7 +95,7 @@ export default function App() {
         </section>
 
         {/* GALLERY SLIDER  */}
-        <section className="container mx-auto bg-[#F7F7F7] lg:h-[678px] lg:w-[1440px] lg:p-14">
+        <section className="h-max-[450px] container mx-auto bg-[#F7F7F7] lg:h-[678px] lg:w-[1440px] lg:p-14">
           <Slider />
         </section>
 

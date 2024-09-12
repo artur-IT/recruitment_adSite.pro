@@ -33,11 +33,7 @@ const Slider = () => {
       >
         {images.map((image, index) => (
           <div key={index} className="slide relative" style={{ width: "50%" }}>
-            <img
-              src={image}
-              alt={`Slide ${index + 1}`}
-              className="slider-image"
-            />
+            <img src={image} alt={`Slide ${index + 1}`} />
             {/* PLAY BUTTON */}
             {/* <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-[82px] h-[82px] bg-slate-400"></div>

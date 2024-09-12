@@ -50,9 +50,15 @@
 @media (max-width: 1023px) {
   .slide {
     margin: 0;
+    display: flex;
+    justify-content: center;
   }
 
   .slider {
     width: 200vw;
+  }
+  .slide img {
+    width: auto;
+    height: 100%;
   }
 }
