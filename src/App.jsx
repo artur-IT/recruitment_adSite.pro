@@ -11,7 +11,7 @@ export default function App() {
           {/* logo */}
           <div className="flex justify-start">
             <img
-              src="/icons/logo_piece.png"
+              src="./icons/logo_piece.png"
               alt="logo piece"
               className="mr-2"
             />
@@ -39,7 +39,7 @@ export default function App() {
             <div className="invisible absolute right-[5%] top-[-15%] w-1/2 max-w-[668px] lg:visible xl:right-20">
               <img
                 className="h-[670px]"
-                src="src/assets/img/HERO_Element.png"
+                src="./img/HERO_Element.png"
                 alt="cars"
               />
             </div>
@@ -67,7 +67,7 @@ export default function App() {
 
             {/* cars */}
             <div className="absolute bottom-24 left-0 h-auto w-full max-w-[1064px] pl-5 lg:top-[400px] xl:left-[376px] xl:top-[328px]">
-              <img src="src/assets/img/HERO_cars.png" alt="cars" />
+              <img src="./img/HERO_cars.png" alt="cars" />
             </div>
           </div>
         </section>

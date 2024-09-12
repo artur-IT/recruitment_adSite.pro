@@ -22,7 +22,7 @@ export default function ExpandText() {
           {isExpanded ? "Zwiń" : "Rozwiń"}
           <img
             className={`ml-2 transition-transform ${isExpanded ? "rotate-180" : ""}`}
-            src="src/assets/icons/arrow_down.png"
+            src="./icons/arrow_down.png"
             alt="arrow"
           />
         </button>
