@@ -9,13 +9,13 @@ export default function App() {
         {/* Navigation  */}
         <nav className="relative z-40 mx-auto grid h-[79px] items-center py-4 lg:grid-cols-3 lg:px-24">
           {/* logo */}
-          <div className="flex justify-start">
+          <div className="flex justify-start pl-5 lg:pl-0">
             <img src="./icons/logo.png" alt="logo piece" className="mr-2" />
             <img src="./icons/logo_text.png" alt="brand text logo" />
           </div>
 
           {/* middle menu */}
-          <div className="absolute right-4 top-4 flex space-x-4 font-roboto-condensed text-base lg:static lg:justify-center">
+          <div className="absolute right-5 top-4 flex space-x-4 font-roboto-condensed text-base lg:static lg:right-0 lg:justify-center">
             <a href="#gallery">Galeria zdjęć</a>
             <a href="#">FAQ</a>
           </div>
@@ -62,7 +62,7 @@ export default function App() {
             </div>
 
             {/* cars */}
-            <div className="absolute bottom-24 left-0 h-auto w-full max-w-[1064px] pl-5 lg:top-[400px] xl:left-[376px] xl:top-[328px]">
+            <div className="absolute bottom-24 right-0 h-auto w-full max-w-[1064px] pl-5 lg:top-[400px] xl:top-[328px]">
               <img src="./img/HERO_cars.png" alt="cars" />
             </div>
           </div>
