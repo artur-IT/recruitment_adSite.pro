@@ -3,9 +3,6 @@ import { useState } from "react";
 export default function ExpandText() {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  const toggleExpand = () => {
-    setIsExpanded(!isExpanded);
-  };
   return (
     <>
       <div
@@ -20,7 +17,7 @@ export default function ExpandText() {
         </p>
         <button
           className={`flex h-[27px] ${!isExpanded ? "w-[62px]" : "w-[50px]"} border-b-[1px] border-b-white font-roboto-condensed text-sm`}
-          onClick={toggleExpand}
+          onClick={() => setIsExpanded(!isExpanded)}
         >
           {isExpanded ? "Zwiń" : "Rozwiń"}
           <img
