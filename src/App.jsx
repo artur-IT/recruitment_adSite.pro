@@ -11,11 +11,11 @@ export default function App() {
           {/* logo */}
           <div className="flex justify-start">
             <img
-              src="src/assets/icons/logo_piece.png"
+              src="/icons/logo_piece.png"
               alt="logo piece"
               className="mr-2"
             />
-            <img src="./assets/icons/logo_text.png" alt="brand logo" />
+            <img src="./icons/logo_text.png" alt="brand logo" />
           </div>
 
           {/* middle menu */}
