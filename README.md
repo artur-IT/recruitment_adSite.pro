@@ -1,4 +1,4 @@
-![screen my app](/assets/img/screen_project.png)
+![screen my app](./assets/img/screen_project.png)
 
 # CarsSpot - SPA Project
 
