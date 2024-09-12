@@ -10,12 +10,8 @@ export default function App() {
         <nav className="relative z-40 mx-auto grid h-[79px] items-center py-4 lg:grid-cols-3 lg:px-24">
           {/* logo */}
           <div className="flex justify-start">
-            <img
-              src="./icons/logo_piece.png"
-              alt="logo piece"
-              className="mr-2"
-            />
-            <img src="./icons/logo_text.png" alt="brand logo" />
+            <img src="./icons/logo.png" alt="logo piece" className="mr-2" />
+            <img src="./icons/logo_text.png" alt="brand text logo" />
           </div>
 
           {/* middle menu */}
