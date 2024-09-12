@@ -1,5 +1,6 @@
-import "./index.css";
-import Slider from "./slider";
+import "./styles/index.css";
+import ExpandText from "./components/ExpandText";
+import Slider from "./components/Slider";
 
 export default function App() {
   return (
@@ -10,11 +11,11 @@ export default function App() {
           {/* logo */}
           <div className="flex justify-start">
             <img
-              src="./icons/logo_piece.png"
+              src="src/assets/icons/logo_piece.png"
               alt="logo piece"
               className="mr-2"
             />
-            <img src="./icons/logo_text.png" alt="brand logo" />
+            <img src="src/assets/icons/logo_text.png" alt="brand logo" />
           </div>
 
           {/* middle menu */}
@@ -38,7 +39,7 @@ export default function App() {
             <div className="invisible absolute right-[5%] top-[-15%] w-1/2 max-w-[668px] lg:visible xl:right-20">
               <img
                 className="h-[670px]"
-                src="./img/HERO_Element.png"
+                src="src/assets/img/HERO_Element.png"
                 alt="cars"
               />
             </div>
@@ -66,7 +67,7 @@ export default function App() {
 
             {/* cars */}
             <div className="absolute bottom-24 left-0 h-auto w-full max-w-[1064px] pl-5 lg:top-[400px] xl:left-[376px] xl:top-[328px]">
-              <img src="./img/HERO_cars.png" alt="cars" />
+              <img src="src/assets/img/HERO_cars.png" alt="cars" />
             </div>
           </div>
         </section>
@@ -108,38 +109,12 @@ export default function App() {
             <div className="mb-5 grid gap-4 px-4 font-bebas-neue text-[25px] font-normal leading-[37.5px] lg:mb-0 lg:h-[76px] lg:justify-around lg:px-0 xl:w-[576px]">
               Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit
               nulla commodo.
-              <div className="grid h-auto gap-6 font-roboto-condensed text-sm font-normal leading-[21px] lg:h-[93px]">
-                Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
-                Donec egestas, nisl vehicula feugiat ornare, diam turpis
-                efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et
-                [...]
-                <button className="flex h-[27px] w-[59px] border-b-[1px] border-b-white font-roboto-condensed text-sm">
-                  Rozwiń
-                  <img
-                    className="w-full pl-2"
-                    src="./icons/arrow_down.png"
-                    alt="arrow"
-                  />
-                </button>
-              </div>
+              <ExpandText />
             </div>
             <div className="mb-5 grid justify-around gap-4 px-4 font-bebas-neue text-[25px] font-normal leading-[37.5px] lg:mb-0 lg:h-[76px] lg:px-0 xl:w-[576px]">
               Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit
               nulla commodo.
-              <div className="grid h-[93px] gap-6 font-roboto-condensed text-sm font-normal leading-[21px]">
-                Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
-                Donec egestas, nisl vehicula feugiat ornare, diam turpis
-                efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et
-                [...]
-                <button className="flex h-[27px] w-[59px] border-b-[1px] border-b-white font-roboto-condensed text-sm">
-                  Rozwiń{" "}
-                  <img
-                    className="w-full pl-2"
-                    src="./icons/arrow_down.png"
-                    alt="arrow"
-                  />
-                </button>
-              </div>
+              <ExpandText />
             </div>
           </div>
         </section>

@@ -1,10 +1,15 @@
-import "./slider.css";
+import "../styles/slider.css";
 
 import { useState, useEffect } from "react";
 
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const images = ["./img/car_1.jpg", "./img/car_2.jpg", "./img/car_3.jpg", "./img/car_4.jpg"];
+  const images = [
+    "src/assets/img/car_1.jpg",
+    "src/assets/img/car_2.jpg",
+    "src/assets/img/car_3.jpg",
+    "src/assets/img/car_4.jpg",
+  ];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -19,10 +24,19 @@ const Slider = () => {
 
   return (
     <div className="slider-container">
-      <div className="slider" style={{ transform: `translateX(-${currentSlide * (screen.availWidth > 1023 ? 55 : 50)}%)` }}>
+      <div
+        className="slider"
+        style={{
+          transform: `translateX(-${currentSlide * (screen.availWidth > 1023 ? 55 : 50)}%)`,
+        }}
+      >
         {images.map((image, index) => (
-          <div key={index} className="relative slide" style={{ width: "50%" }}>
-            <img src={image} alt={`Slide ${index + 1}`} className="slider-image" />
+          <div key={index} className="slide relative" style={{ width: "50%" }}>
+            <img
+              src={image}
+              alt={`Slide ${index + 1}`}
+              className="slider-image"
+            />
             {/* PLAY BUTTON */}
             {/* <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-[82px] h-[82px] bg-slate-400"></div>
@@ -37,7 +51,11 @@ const Slider = () => {
       </div>
       <div className="dots">
         {images.map((_, index) => (
-          <span key={index} className={`dot ${index === currentSlide ? "active" : ""}`} onClick={() => setCurrentSlide(index)} />
+          <span
+            key={index}
+            className={`dot ${index === currentSlide ? "active" : ""}`}
+            onClick={() => setCurrentSlide(index)}
+          />
         ))}
       </div>
     </div>
