@@ -23,7 +23,7 @@ const Slider = () => {
   }, [images.length]);
 
   return (
-    <div className="slider-container">
+    <div id="cars_gallery" className="slider-container">
       <div
         className="slider"
         style={{

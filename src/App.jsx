@@ -87,17 +87,10 @@ export default function App() {
             </div>
 
             <div className="flex flex-row font-roboto-condensed lg:pt-4">
-              <button
-                href="#gallery"
-                // className="mr-12 w-auto text-[15px] focus:border-b-[1px] focus:border-[#0147FF] focus:text-[#0147FF] focus:ring-1"
-                className="font-roboto-flex mr-12 w-auto text-[15px] focus:border-b-[1px] focus:border-[#0147FF] focus:text-[#0147FF]"
-              >
+              <button className="font-roboto-flex mr-12 w-auto text-[15px] focus:border-b-[1px] focus:border-[#0147FF] focus:text-[#0147FF]">
                 Samochody osobowe
               </button>
-              <button
-                href="#cars_gallery"
-                className="font-roboto-flex w-auto text-[15px] text-black focus:border-b-[1px] focus:border-[#0147FF] focus:text-[#0147FF]"
-              >
+              <button className="font-roboto-flex w-auto text-[15px] text-black focus:border-b-[1px] focus:border-[#0147FF] focus:text-[#0147FF]">
                 Samochody dostawcze
               </button>
             </div>
@@ -105,10 +98,7 @@ export default function App() {
         </section>
 
         {/* GALLERY SLIDER  */}
-        <section
-          id="cars_gallery"
-          className="h-max-[450px] lg:h-max-[678px] container mx-auto bg-[#F7F7F7] lg:w-[1440px] lg:p-14"
-        >
+        <section className="h-max-[450px] lg:h-max-[678px] container mx-auto bg-[#F7F7F7] lg:w-[1440px] lg:p-14">
           <Slider />
         </section>
 
