@@ -51,10 +51,13 @@ export default function App() {
                   przeżyciem.
                 </p>
                 <div className="flex w-fit flex-col gap-2 font-roboto-condensed sm:flex-row sm:gap-6">
-                  <button className="font-roboto-flex h-[47px] w-[135px] rounded-lg bg-[#0147FF] text-[#F7F7F7] md:w-[158px]">
+                  <button
+                    href="#gallery"
+                    className="font-roboto-flex h-[47px] w-[135px] rounded-lg bg-[#0147FF] text-sm text-[#F7F7F7] md:w-[158px] md:text-base"
+                  >
                     <a href="#gallery">Zobacz zdjęcia</a>
                   </button>
-                  <button className="delay-900 font-roboto-flex h-[47px] w-[135px] rounded-lg border-[1px] border-[#0147FF] bg-[#F7F7F7] text-[#0147FF] transition-all hover:border-2 hover:border-[#0147FF] hover:bg-[#0147FF] hover:text-[#F7F7F7] md:w-[158px]">
+                  <button className="delay-900 font-roboto-flex h-[47px] w-[135px] rounded-lg border-[1px] border-[#0147FF] bg-[#F7F7F7] text-sm text-[#0147FF] transition-all hover:border-2 hover:border-[#0147FF] hover:bg-[#0147FF] hover:text-[#F7F7F7] md:w-[158px] md:text-base">
                     <a href="tel:+48 123 456 789">Zadzwoń do nas</a>
                   </button>
                 </div>
