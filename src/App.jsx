@@ -41,7 +41,7 @@ export default function App() {
             </div>
 
             {/* info */}
-            <div className="absolute z-40 h-[343px] w-11/12">
+            <div className="absolute z-40 h-[343px] w-10/12">
               <div className="grid lg:gap-6">
                 <div className="font-bebas-neue text-5xl leading-tight lg:w-[650px] lg:text-[76px]">
                   {"Sprzedajemy samochody z europy".toUpperCase()}
@@ -50,7 +50,7 @@ export default function App() {
                   Kup komfortowy pojazd, aby każda podróż była wyjątkowym
                   przeżyciem.
                 </p>
-                <div className="flex flex-col gap-2 font-roboto-condensed sm:flex-row sm:gap-6">
+                <div className="flex w-fit flex-col gap-2 font-roboto-condensed sm:flex-row sm:gap-6">
                   <button className="h-[47px] w-[135px] rounded-lg bg-[#0147FF] text-[#F7F7F7] md:w-[158px]">
                     <a href="#gallery">Zobacz zdjęcia</a>
                   </button>
@@ -70,7 +70,7 @@ export default function App() {
 
         {/* Headers Block */}
         <section className="bg-[#F7F7F7] lg:h-[207px] lg:px-24 lg:pt-16">
-          <div className="mx-4 grid lg:mx-auto lg:w-[1264px] lg:gap-6">
+          <div className="mx-4 grid lg:mx-auto lg:gap-6">
             <div className="lg:h-[80px] lg:w-[434px]">
               <span className="font-roboto-condensed text-[21.5px] leading-[32.25px] text-[#0147FF]">
                 Prezentacja firmy
@@ -95,7 +95,7 @@ export default function App() {
         </section>
 
         {/* GALLERY SLIDER  */}
-        <section className="h-max-[450px] container mx-auto bg-[#F7F7F7] lg:h-[678px] lg:w-[1440px] lg:p-14">
+        <section className="h-max-[450px] lg:h-max-[678px] container mx-auto bg-[#F7F7F7] lg:w-[1440px] lg:p-14">
           <Slider />
         </section>
 

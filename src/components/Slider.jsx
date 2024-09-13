@@ -19,16 +19,26 @@ const Slider = () => {
         else return prevSlide + 1;
       });
     }, 2000);
-
     return () => clearInterval(timer);
   }, [images.length]);
+
+  const translateXcalc = () => {
+    const md = 768;
+    const lg = 1024;
+    if (innerWidth >= md && innerWidth < lg) {
+      return 50;
+    } else if (innerWidth > lg) {
+      return 55;
+    }
+  };
 
   return (
     <div className="slider-container">
       <div
         className="slider"
         style={{
-          transform: `translateX(-${currentSlide * (screen.availWidth > 1023 ? 55 : 50)}%)`,
+          // transform: `translateX(-${currentSlide * (innerWidth > 1023 ? 55 : 50)}%)`,
+          transform: `translateX(-${currentSlide * translateXcalc()}%)`,
         }}
       >
         {images.map((image, index) => (
