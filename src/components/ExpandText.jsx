@@ -16,12 +16,12 @@ export default function ExpandText() {
           labore et dolore magna aliqua.
         </p>
         <button
-          className={`flex h-[27px] ${!isExpanded ? "w-[62px]" : "w-[50px]"} border-b-[1px] border-b-white font-roboto-condensed text-sm`}
+          className={`flex h-[27px] ${!isExpanded ? "w-[62px]" : "w-[50px]"} font-roboto-condensed text-sm focus:border-b-[1px] focus:border-white`}
           onClick={() => setIsExpanded(!isExpanded)}
         >
           {isExpanded ? "Zwiń" : "Rozwiń"}
           <img
-            className={`ml-2 transition-transform ${isExpanded ? "rotate-180" : ""}`}
+            className={`ml-2 h-4 transition-transform ${isExpanded ? "rotate-180" : ""}`}
             src="./icons/arrow_down.png"
             alt="arrow"
           />
