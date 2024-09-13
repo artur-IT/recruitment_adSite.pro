@@ -2,11 +2,10 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
-    extend: {
-      fontFamily: {
-        "roboto-condensed": ['"Roboto Condensed"', "sans-serif"],
-        "bebas-neue": ['"Bebas Neue"', "cursive"],
-      },
+    fontFamily: {
+      "roboto-condensed": ["Roboto Condensed", "sans-serif"],
+      "roboto-flex": ["Roboto Flex", "sans-serif"],
+      "bebas-neue": ["Bebas Neue", "cursive"],
     },
   },
   plugins: [],

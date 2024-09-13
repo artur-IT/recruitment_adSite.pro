@@ -83,11 +83,18 @@ export default function App() {
               </h2>
             </div>
 
-            <div className="flex flex-row pt-6 font-roboto-condensed lg:pt-4">
-              <button className="mr-12 w-auto border-b-[1px] border-[#0147FF] text-[15px] text-[#0147FF]">
+            <div className="flex flex-row font-roboto-condensed lg:pt-4">
+              <button
+                href="#gallery"
+                // className="mr-12 w-auto text-[15px] focus:border-b-[1px] focus:border-[#0147FF] focus:text-[#0147FF] focus:ring-1"
+                className="font-roboto-flex mr-12 w-auto text-[15px] focus:border-b-[1px] focus:border-[#0147FF] focus:text-[#0147FF]"
+              >
                 Samochody osobowe
               </button>
-              <button className="w-auto text-[15px] text-black">
+              <button
+                href="#cars_gallery"
+                className="w-auto text-[15px] text-black focus:border-b-[1px] focus:border-[#0147FF] focus:text-[#0147FF]"
+              >
                 Samochody dostawcze
               </button>
             </div>
@@ -95,7 +102,10 @@ export default function App() {
         </section>
 
         {/* GALLERY SLIDER  */}
-        <section className="h-max-[450px] lg:h-max-[678px] container mx-auto bg-[#F7F7F7] lg:w-[1440px] lg:p-14">
+        <section
+          id="cars_gallery"
+          className="h-max-[450px] lg:h-max-[678px] container mx-auto bg-[#F7F7F7] lg:w-[1440px] lg:p-14"
+        >
           <Slider />
         </section>
 
