@@ -2,6 +2,9 @@ import "./styles/index.css";
 import ExpandText from "./components/ExpandText";
 import Slider from "./components/Slider";
 
+const gotoCarsGallery = (target) =>
+  document.getElementById(target).scrollIntoView({ behavior: "smooth" });
+
 export default function App() {
   return (
     <>
@@ -16,7 +19,9 @@ export default function App() {
 
           {/* middle menu */}
           <div className="font-roboto-flex absolute right-5 top-4 flex space-x-4 text-base lg:static lg:right-0 lg:justify-center">
-            <a href="#gallery">Galeria zdjęć</a>
+            <button onClick={() => gotoCarsGallery("gallery")}>
+              Galeria zdjęć
+            </button>
             <a href="#">FAQ</a>
           </div>
 
@@ -55,7 +60,9 @@ export default function App() {
                     href="#gallery"
                     className="font-roboto-flex h-[47px] w-[135px] rounded-lg bg-[#0147FF] text-sm text-[#F7F7F7] md:w-[158px] md:text-base"
                   >
-                    <a href="#gallery">Zobacz zdjęcia</a>
+                    <button onClick={() => gotoCarsGallery("gallery")}>
+                      Zobacz zdjęcia
+                    </button>
                   </button>
                   <button className="delay-900 font-roboto-flex h-[47px] w-[135px] rounded-lg border-[1px] border-[#0147FF] bg-[#F7F7F7] text-sm text-[#0147FF] transition-all hover:border-2 hover:border-[#0147FF] hover:bg-[#0147FF] hover:text-[#F7F7F7] md:w-[158px] md:text-base">
                     <a href="tel:+48 123 456 789">Zadzwoń do nas</a>
@@ -87,10 +94,16 @@ export default function App() {
             </div>
 
             <div className="flex flex-row font-roboto-condensed lg:pt-4">
-              <button className="font-roboto-flex mr-12 w-auto text-[15px] focus:border-b-[1px] focus:border-[#0147FF] focus:text-[#0147FF]">
+              <button
+                onClick={() => gotoCarsGallery("cars_gallery")}
+                className="font-roboto-flex mr-12 w-auto text-[15px] focus:border-b-[1px] focus:border-[#0147FF] focus:text-[#0147FF]"
+              >
                 Samochody osobowe
               </button>
-              <button className="font-roboto-flex w-auto text-[15px] text-black focus:border-b-[1px] focus:border-[#0147FF] focus:text-[#0147FF]">
+              <button
+                onClick={() => gotoCarsGallery("cars_gallery")}
+                className="font-roboto-flex w-auto text-[15px] text-black focus:border-b-[1px] focus:border-[#0147FF] focus:text-[#0147FF]"
+              >
                 Samochody dostawcze
               </button>
             </div>
