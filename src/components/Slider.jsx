@@ -22,23 +22,12 @@ const Slider = () => {
     return () => clearInterval(timer);
   }, [images.length]);
 
-  const translateXcalc = () => {
-    const md = 768;
-    const lg = 1024;
-    if (innerWidth >= md && innerWidth < lg) {
-      return 50;
-    } else if (innerWidth > lg) {
-      return 55;
-    }
-  };
-
   return (
     <div className="slider-container">
       <div
         className="slider"
         style={{
-          // transform: `translateX(-${currentSlide * (innerWidth > 1023 ? 55 : 50)}%)`,
-          transform: `translateX(-${currentSlide * translateXcalc()}%)`,
+          transform: `translateX(-${currentSlide * (innerWidth > 1023 ? 55 : 50)}%)`,
         }}
       >
         {images.map((image, index) => (
