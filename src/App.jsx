@@ -15,14 +15,14 @@ export default function App() {
           </div>
 
           {/* middle menu */}
-          <div className="absolute right-5 top-4 flex space-x-4 font-roboto-condensed text-base lg:static lg:right-0 lg:justify-center">
+          <div className="font-roboto-flex absolute right-5 top-4 flex space-x-4 text-base lg:static lg:right-0 lg:justify-center">
             <a href="#gallery">Galeria zdjęć</a>
             <a href="#">FAQ</a>
           </div>
 
           {/* right button */}
           <div className="relative lg:static lg:flex lg:justify-end">
-            <button className="delay-900 invisible h-[47px] w-[135px] rounded-lg bg-[#0147FF] font-roboto-condensed text-[#F7F7F7] transition-all hover:border-[1px] hover:border-[#0147FF] hover:bg-white hover:text-[#0147FF] lg:visible lg:w-[158px]">
+            <button className="delay-900 font-roboto-flex invisible h-[47px] w-[135px] rounded-lg bg-[#0147FF] text-[#F7F7F7] transition-all hover:border-[1px] hover:border-[#0147FF] hover:bg-white hover:text-[#0147FF] lg:visible lg:w-[158px]">
               <a href="tel:+48 123 456 789">Zadzwoń do nas</a>
             </button>
           </div>
@@ -51,10 +51,10 @@ export default function App() {
                   przeżyciem.
                 </p>
                 <div className="flex w-fit flex-col gap-2 font-roboto-condensed sm:flex-row sm:gap-6">
-                  <button className="h-[47px] w-[135px] rounded-lg bg-[#0147FF] text-[#F7F7F7] md:w-[158px]">
+                  <button className="font-roboto-flex h-[47px] w-[135px] rounded-lg bg-[#0147FF] text-[#F7F7F7] md:w-[158px]">
                     <a href="#gallery">Zobacz zdjęcia</a>
                   </button>
-                  <button className="delay-900 h-[47px] w-[135px] rounded-lg border-[1px] border-[#0147FF] bg-[#F7F7F7] text-[#0147FF] transition-all hover:border-2 hover:border-[#0147FF] hover:bg-[#0147FF] hover:text-[#F7F7F7] md:w-[158px]">
+                  <button className="delay-900 font-roboto-flex h-[47px] w-[135px] rounded-lg border-[1px] border-[#0147FF] bg-[#F7F7F7] text-[#0147FF] transition-all hover:border-2 hover:border-[#0147FF] hover:bg-[#0147FF] hover:text-[#F7F7F7] md:w-[158px]">
                     <a href="tel:+48 123 456 789">Zadzwoń do nas</a>
                   </button>
                 </div>
@@ -93,7 +93,7 @@ export default function App() {
               </button>
               <button
                 href="#cars_gallery"
-                className="w-auto text-[15px] text-black focus:border-b-[1px] focus:border-[#0147FF] focus:text-[#0147FF]"
+                className="font-roboto-flex w-auto text-[15px] text-black focus:border-b-[1px] focus:border-[#0147FF] focus:text-[#0147FF]"
               >
                 Samochody dostawcze
               </button>
