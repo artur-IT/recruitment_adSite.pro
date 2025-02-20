@@ -6,7 +6,7 @@ Recruitment to adSite.pro
 
 See the live version of [CarsSpot - SPA Project](https://artur-it.github.io/recruitment_adSite.pro/).
 
-Simple short Single Landingpage for recruitment.
+Simple short Single Landingpage for recruitment created according to the design in Figma.
 
 &nbsp;
 
